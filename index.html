@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Uso - Forside</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="root">
+    <header class="header">
+      <div class="logo">
+        <a href="index.html" class="logo__link">
+          <img
+            src="./img/logo.png"
+            alt="Uso Logo"
+            title="Gå til Forside"
+            class="logo__img"
+          />
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a
+              href="index.html"
+              title="Gå til Forside"
+              class="navbar__link navbar__link--active"
+              >Forside</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#" title="Gå til Koncerter" class="navbar__link"
+              >Koncerter</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="#" title="Gå til Galleri" class="navbar__link">Galleri</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" title="Gå til Musik" class="navbar__link">Musik</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" title="Gå til Gear" class="navbar__link">Gear</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="hero">
+        <div class="slider" name="slider">
+          <div class="slider__text">
+            <h1 class="heading-1 mb-md">
+              Hør <span class="highlight">"Autopilot"</span> på SPOTIFY
+            </h1>
+            <button class="slider__btn">Hør Her</button>
+          </div>
+          <img src="./img/hero-1.png" alt="Slider Photo" class="slider__img" />
+        </div>
+      </section>
+      <section class="video">
+        <img
+          src="./img/banner.png"
+          alt="Banner Image"
+          title="Banner Image"
+          class="video__title"
+        />
+        <video class="video__player" width="880px" height="500px" controls>
+          <!-- <source src="./img/Autopilot.mp4#t=6" type="video/mp4" /> -->
+          <source src="./img/Autopilot.webm#t=6" type="video/webm" />
+          <source src="./img/Autopilot.ogg#t=6" type="video/ogg" />
+          Din browser understøtter ikke video tag
+        </video>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img
+              src="./img/logo.png"
+              alt="Uso Logo"
+              title="Gå til Forside"
+              class="logo__img"
+            />
+          </a>
+        </div>
+        <div class="instagram">
+          <div class="instagram__pp">
+            <img
+              src="./img/instagram-photo-2.png"
+              class="instagram__pp-img"
+              alt="Instagram Profile Picture"
+            />
+            <span class="instagram__pp-text">usomusic</span>
+          </div>
+          <div class="instagram__entry">
+            <img
+              src="./img/instagram-photo-1.png"
+              alt="Instagram Photo Entry"
+              class="instagram__img"
+            />
+          </div>
+          <div class="instagram__entry">
+            <img
+              src="./img/instagram-photo-2.png"
+              alt="Instagram Photo Entry"
+              class="instagram__img"
+            />
+          </div>
+          <div class="instagram__entry">
+            <img
+              src="./img/instagram-photo-3.png"
+              alt="Instagram Photo Entry"
+              class="instagram__img"
+            />
+          </div>
+          <button class="instagram__btn" title="Follow me on Instagram">
+            <a href="#">Follow me on Instagram</a>
+          </button>
+        </div>
+        <div class="newsletter">
+          <h3 class="heading-3 mb-sm">NYHEDSBREV</h3>
+          <form action="" class="newsletter__form mb-sm">
+            <input
+              type="text"
+              class="newsletter__input"
+              placeholder="Skriv din e-mail"
+            />
+            <button class="newsletter__btn">
+              <img src="./img/arrow-right.png" alt="Arrow Right Icon" />
+            </button>
+          </form>
+          <p class="newsletter__text mb-md">
+            Få dugfriske nyheder direkte i mailboxen.
+          </p>
+          <div class="social">
+            <a href="#" title="Gå til Facebook Fanpage" class="social__link">
+              <img
+                src="./img/icon-facebook.png"
+                alt="Facebook Icon"
+                class="social__icon"
+              />
+            </a>
+            <a href="#" title="Gå til Instagram Profil" class="social__link">
+              <img
+                src="./img/icon-instagram.png"
+                alt="Instagram Icon"
+                class="social__icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">&copy; USO MUSIC, 2017. All Rights Reserved.</div>
+    </footer>
+  </body>
+</html>

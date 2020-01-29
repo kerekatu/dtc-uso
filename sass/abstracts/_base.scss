@@ -1,0 +1,63 @@
+// Variables
+
+$font-primary: 'robotoregular';
+$font-primary-bold: 'robotobold';
+$font-primary-light: 'robotolight';
+
+$default-font-size: 1.6rem;
+$default-line-height: 1.6;
+
+$color-black: #111;
+$color-white: #fff;
+$color-contrast: #a5883e;
+
+$page-width-max: 114.7rem;
+
+$bp-large: 114.7rem;
+
+// Reset
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input,
+button,
+textarea {
+  font-family: $font-primary;
+  line-height: 1;
+}
+
+html {
+  font-size: 62.5%; // 10 / 16 = 10px = 1rem
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+  color: $color-white;
+}
+
+#root {
+  background-color: $color-black;
+  width: $page-width-max;
+  margin: 0 auto;
+}

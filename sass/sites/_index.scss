@@ -1,0 +1,19 @@
+#root {
+  display: grid;
+  grid-template-rows: [header] 7rem [main-content] max-content [footer] max-content;
+}
+
+.header {
+  grid-row: header;
+}
+
+.main-content {
+  display: grid;
+  justify-items: center;
+  grid-row: main-content;
+  margin-bottom: 10rem;
+}
+
+.footer {
+  grid-row: footer;
+}

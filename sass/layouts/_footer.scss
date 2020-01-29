@@ -1,0 +1,135 @@
+.footer {
+  display: grid;
+  grid-template-rows: 1fr max-content;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  border-top: 0.3rem solid $color-white;
+  padding: 3rem 0;
+  align-items: center;
+
+  & > .logo .logo__img {
+    height: 17rem;
+  }
+
+  & > div:first-child {
+    border-right: 0.1rem solid $color-white;
+  }
+
+  & > div:last-child {
+    border-left: 0.1rem solid $color-white;
+  }
+
+  & > * {
+    padding: 0 3.5rem;
+  }
+}
+
+.instagram {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content 1fr max-content;
+  justify-items: center;
+  grid-row-gap: 2rem;
+
+  &__pp {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__pp-img {
+    height: 3rem;
+    border-radius: 50rem;
+    margin-right: 1rem;
+  }
+
+  &__pp-text {
+    font-size: 1.4rem;
+    font-family: $font-primary-bold;
+  }
+
+  &__entry {
+    grid-row: 2 / 3;
+  }
+
+  &__img {
+    display: block;
+    height: 12rem;
+  }
+
+  &__btn {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    background-color: #1c5a81;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  &__btn > a {
+    color: $color-white;
+  }
+}
+
+.newsletter {
+  &__text {
+    font-size: 1.2rem;
+    font-family: $font-primary-light;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    padding: 1rem 1.5rem;
+    background-color: $color-contrast;
+    border: 0.1rem solid $color-white;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    color: $color-white;
+
+    &::placeholder {
+      opacity: 0.8 !important;
+      color: $color-white;
+    }
+  }
+
+  &__btn {
+    padding: 1.2rem 1.5rem;
+    background-color: $color-white;
+    border: 0.1rem solid $color-white;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    cursor: pointer;
+
+    & > img {
+      display: block;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icon {
+    display: block;
+    height: 3rem;
+    margin: 0 0.5rem;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-family: $font-primary-light;
+  padding: 2.5rem 0;
+  border-top: 0.1rem solid $color-white;
+}
